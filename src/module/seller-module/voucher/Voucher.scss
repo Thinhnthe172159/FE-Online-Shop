@@ -1,0 +1,23 @@
+// CSS cho StyledCard
+.StyledCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.StyledCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--mui-shadow); // Thay thế bằng giá trị shadow từ theme nếu cần
+}
+
+// CSS cho FloatingAddButton
+.FloatingAddButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  min-width: unset;
+} 

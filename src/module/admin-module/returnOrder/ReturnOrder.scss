@@ -1,0 +1,81 @@
+.return-order-header {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+
+  .breadcrumb {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+
+    span {
+      margin-right: 4px;
+
+      &::after {
+        content: " ";
+      }
+    }
+
+    strong {
+      color: #374151;
+    }
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .title-section {
+      max-width: 70%;
+
+      h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #4b5563;
+        max-width: 600px;
+        margin-bottom: 0.75rem;
+      }
+
+      .features-list {
+        margin-top: 0.75rem;
+        padding-left: 1rem;
+        list-style: none;
+
+        li {
+          position: relative;
+          font-size: 0.95rem;
+          color: #374151;
+          padding-left: 1.25rem;
+          margin-bottom: 0.5rem;
+
+          &::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.85rem;
+            color: #10b981; // xanh ngọc
+          }
+        }
+      }
+    }
+
+    .date-info {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+      background-color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+  }
+}

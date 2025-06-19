@@ -1,0 +1,62 @@
+#search-function {
+  position: absolute;
+  z-index: 99999999;
+  top: 50px;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .search-content {
+    h5 {
+      border-bottom: 1px solid #e8e4e4;
+      padding-bottom: 15px;
+    }
+    .search-label {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #1b1b1b;
+      cursor: pointer;
+    }
+  }
+}
+
+.payment-icon, .shipping-icon, .social-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.payment-method-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-subscribe {
+  background-color: #FF5722; /* Customize this to match your brand */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-subscribe svg {
+  fill: white;
+}
+
+.logo-bct {
+  margin-top: 10px;
+}
+
+ul.list-unstyled li p {
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+ul.list-unstyled li p:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,162 @@
+#order {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+}
+
+#order-detail {
+  width: 70%;
+  padding: 20px;
+  .shop-name {
+    margin: unset;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #1b1b1b;
+  }
+  .shop-address {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #868686;
+    padding: unset;
+    margin: 0;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  .product-name {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #1b1b1b;
+    margin: unset;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+  .option-general {
+    color: #868686;
+    font-size: 12px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+  .option-general-item{
+    font-size: 14px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+  .item-general{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #1b1b1b;
+  }
+  .title{
+    @extend .shop-address;
+    color: #505050;
+    font-size: 15px;
+  }
+  .total-price{
+    
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #51b699;
+  }
+  .ship-total{
+    @extend .total-price;
+    font-size: 17px;
+  }
+  .sub-item{
+  
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #505050;
+  }
+}
+
+#order-total{
+  .order-address-title{
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #505050;
+  }
+  .order-address-detail{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin: unset;
+  }
+  
+  .total-item-title{
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #505050;
+  }
+  .total-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #505050;
+  }
+  .total-price{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.008em;
+    color: #51b699;
+  }
+  
+}
+.order-modal{
+  width: 60% !important;
+  .modal-content {
+  }
+}
+.order-address-detail{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: unset;
+  color: #928e8e;
+}
+.custom-radio .form-check-input:checked {
+  background-color: #ffcf20!important; /* Màu nền tùy chỉnh khi được chọn */
+  border-color: yellow !important; /* Màu viền tùy chỉnh khi được chọn */
+}
+  
+.custom-radio .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem #f4e492; /* Hiệu ứng focus */
+}
+.voucher-modal{
+  width: 40% !important;
+  .modal-content {
+    max-width:  none;
+  }
+}

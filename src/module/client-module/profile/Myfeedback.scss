@@ -1,0 +1,129 @@
+
+$primary-color: #FFB300; 
+$secondary-color: #1976D2; 
+$error-color: #f44336; 
+$success-color: #4CAF50; 
+$text-color: #333;
+
+.feedback-table {
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 16px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; 
+    }
+}
+
+.dialog-title {
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-content {
+    padding: 20px;
+
+    .MuiTextField-root {
+        margin-bottom: 15px;
+    }
+
+    .file-upload {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .file-preview {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 5px;
+                border: 1px solid #ddd;
+            }
+
+            .remove-icon {
+                cursor: pointer;
+                color: $error-color;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: darkorange; 
+    }
+}
+
+.button-edit {
+    background-color: $success-color; 
+    color: white;
+}
+
+.button-delete {
+    background-color: $error-color; 
+    color: white;
+}
+
+.rating {
+    color: gold; 
+}
+
+.edit-dialog {
+    min-width: 500px; 
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 15px;
+        color: $text-color;
+    }
+
+    .error-message {
+        color: $error-color;
+        margin-top: 10px;
+    }
+
+    .file-input {
+        margin-top: 10px;
+        border: 1px dashed #ccc;
+        padding: 10px;
+        text-align: center;
+
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            color: $secondary-color;
+            text-decoration: underline;
+        }
+    }
+}

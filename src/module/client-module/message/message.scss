@@ -1,0 +1,16 @@
+.nav-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 0;
+
+   
+    
+}
+.body-item{
+   
+    &:hover{
+    background-color: #cedde8;
+
+    }
+}

@@ -1,0 +1,190 @@
+#filter-list-product{
+    .product-item {
+        max-width: 220px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        position: relative;
+        cursor: pointer;
+    
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        .exclusive-label {
+          position: absolute;
+          top: -20px;
+          background-color: #FFEB3B;
+          padding: 5px 10px;
+          font-size: 12px;
+          font-weight: bold;
+          border-radius: 4px;
+        }
+    
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+          margin-bottom: 15px;
+        }
+    
+        .product-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+    
+        .product-name-all {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: #1b1b1b;
+            &:hover{
+                color: #d04124;
+            }
+        }
+    
+        .product-price {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #51b699;
+            margin: 10px 0;
+        }
+    
+        .product-location {
+          font-size: 14px;
+          color: #6c757d;
+          margin-bottom: 5px;
+        }
+    
+        .product-rating {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5px;
+    
+          .stars {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-bottom: 5px;
+          }
+          
+          .star {
+            color: #ddd;
+            margin-right: 2px;
+            font-size: 24px; 
+            line-height: 24px;
+          
+            &.filled {
+              color: #ffc107; 
+            }
+          
+            &.half-filled {
+              position: relative;
+              display: inline-block; 
+              color: #ddd; 
+              width: 24px; 
+              height: 24px;
+    
+              &::before {
+                content: '★';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%; 
+                overflow: hidden;
+                color: #ffc107;
+              }
+            }
+          }
+    
+          .no-rating {
+            color: #ddd;
+          }
+    
+          .rating-text {
+            font-size: 12px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: 5px;
+          }
+    
+          .no-rating-text {
+            font-size: 12px;
+            color: #ccc;
+            text-align: center;
+          }
+        }
+    
+        .product-description {
+          font-size: 12px;
+          color: #6c757d;
+          margin-top: 10px;
+      }
+
+    
+      }
+}
+
+.select-filter{
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  padding: 15px 10px;
+  box-shadow: 1.5px 1.5px #888;
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+ 
+}
+
+#product-filter{
+  position: sticky;
+  top: 20px;
+  h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.008em;
+    color: #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .fitler-label{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #1b1b1b;
+    margin-bottom: 8px;
+  }
+  .checkbox-label{
+    color: #1b1b1b;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 5px;
+  }
+  .radio-label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #868686;
+  }
+}

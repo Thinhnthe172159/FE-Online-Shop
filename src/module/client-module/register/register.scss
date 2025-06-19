@@ -1,0 +1,66 @@
+.customer-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .customer-type-wrap {
+    display: flex;
+    gap: 20px;
+
+    .elem {
+      padding: 100px 50px;
+      border: 1px dashed;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid;
+      }
+    }
+
+    .active {
+      border: 1px solid;
+    }
+  }
+}
+
+#sign-up {
+  min-height: 120vh;
+  position: relative;
+  form {
+    background-color: white;
+    width: 25vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 25px;
+    border-radius: 10px;
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #505050;
+      padding: unset;
+      margin: 0 0 8px 0;
+      span {
+        color: red;
+      }
+    }
+    input{
+        width: 100%;
+        caret-color: #ffcf20;
+        padding: 8px 16px;
+        border: 1px solid #e7e7e7;
+        border-radius: 999px;
+        text-align: unset;
+        box-sizing: border-box;
+        &:focus{
+            border-color: none;
+            box-shadow: none;
+        }
+    }
+    
+
+  }
+}

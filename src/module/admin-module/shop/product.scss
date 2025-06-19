@@ -1,0 +1,29 @@
+#seller-table-product{
+    .product-avatar-img {
+        width: 100%;
+        max-width: 350px;
+        min-height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .product-info{
+        .product-info-item{
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            .product-name{
+                font-weight: 500;
+            }
+        }
+       
+    }
+   
+}
+.save-transaction-modal{
+    width: 38% !important;
+    .modal-content {
+      max-width:  none;
+    }
+  
+  }

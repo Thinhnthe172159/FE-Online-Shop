@@ -1,0 +1,43 @@
+.product-detail {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .card-content {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px;
+  }
+  /* CSS cho nút "UPLOAD" */
+.upload-btn {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .upload-btn:hover {
+    background-color: #303f9f;
+  }
+  

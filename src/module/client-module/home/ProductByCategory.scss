@@ -1,0 +1,100 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px; /* Adjusted from 20px to 5px */
+}
+
+.product-item {
+  flex: 1 1 calc(25% - 5px); /* Adjusted to reflect the new gap */
+  max-width: calc(25% - 5px); /* Adjusted to reflect the new gap */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-image img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 10px;
+  }
+
+  .product-name {
+      font-size: 14px;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  .product-price {
+      font-size: 18px;
+      color: #2a9d8f;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+
+  .product-location {
+      font-size: 12px;
+      color: #6c757d;
+      margin-bottom: 5px;
+  }
+
+  .product-rating {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .stars {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5px;
+      }
+  }
+
+  .no-rating-text {
+      font-size: 12px;
+      color: #ccc;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-item {
+      flex: 1 1 calc(33.33% - 5px);
+      max-width: calc(33.33% - 5px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+      flex: 1 1 calc(50% - 5px); 
+      max-width: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 576px) {
+  .product-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}

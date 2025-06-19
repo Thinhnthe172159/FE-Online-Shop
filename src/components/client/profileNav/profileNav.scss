@@ -1,0 +1,49 @@
+#profile-nav{
+    background-color: white;
+    position: sticky;
+    top: 10px;
+    border: 1px solid #e7e7e7;
+    .active{
+        color: #ffcf20;
+    }
+    ul{
+        list-style: none;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        li{
+            cursor: pointer;
+        }
+        .nested-menu{
+            .sub-menu-head{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .sub-menu{
+                gap: 20px;
+                height: 0px;
+                padding-left: 20px;
+                padding: 0;
+                overflow: hidden;
+                transition: all 0.5s;
+            } 
+            .active-sub-menu{
+                display: flex;
+                height: auto;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+        }
+    }
+}

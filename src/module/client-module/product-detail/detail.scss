@@ -1,0 +1,25 @@
+#feedback {
+    margin-top: 100px;
+  
+    .feedback-rating {
+      background-color: #f3f3f3;
+      border: 1px solid #e7e7e7;
+    }
+  
+    .css-hud6bj-MuiLinearProgress-bar1 {
+      background-color: orange;
+    }
+  
+    .star {
+      color: #e0e0e0;
+  
+      &.highlighted {
+        color: #ffc107;
+      }
+    }
+  
+    .zero-rating .star {
+      color: #e0e0e0 !important; 
+    }
+  }
+  
